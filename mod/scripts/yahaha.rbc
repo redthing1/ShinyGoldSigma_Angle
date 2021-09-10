@@ -1,0 +1,15 @@
+'---------------
+#dynamic 0x800000
+
+#org @main
+lockall
+msgbox @greeting MSG_KEEPOPEN
+releaseall
+end
+
+
+'---------
+' Strings
+'---------
+#org @greeting
+= Yahaha!\pYou found me!
