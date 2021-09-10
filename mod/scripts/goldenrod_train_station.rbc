@@ -1,0 +1,152 @@
+'---------------
+#org 0x80B17D
+checkflag 0x1185
+if 0x1 call 0x881FF89
+msgbox 0x8824C09 MSG_FACE '"The train hasn't come in[.]\pI kno..."
+end
+
+'---------------
+#org 0x81FF89
+msgbox 0x8824C66 MSG_YESNO '"We'll soon depart for Saffron.\pAr..."
+compare LASTRESULT 0x1
+if 0x1 call 0x88225C0
+msgbox 0x8824CA0 MSG_FACE '"We hope to see you again."
+end
+
+'---------------
+#org 0x8225C0
+checkflag 0x11CF
+if 0x1 call 0x8824BA9
+msgbox 0x8824CBC MSG_FACE '"Sorry, but you don't have a Pass."
+end
+
+'---------------
+#org 0x824BA9
+call 0x8824BF2
+msgbox 0x8824CE0 MSG_FACE '"May I see your rail Pass, please?\..."
+applymovement 0x4 0x8824D1D
+pause 0x1
+applymovement MOVE_PLAYER 0x8824D23
+pause 0x80
+fadescreen 0x1
+playsong 0x11E 0x33
+applymovement MOVE_PLAYER 0x8824D2D
+pause 0xF0
+pause 0x20
+fadescreen 0x0
+applymovement MOVE_PLAYER 0x8824D4F
+pause 0xD0
+warp 0x22 0x3C 0x1 0x26C 0xFFFF
+'---------------
+#org 0x824BF2
+setvar 0x7030 0x129
+setvar 0x7031 0x12A
+setvar 0x7033 0x10A
+setvar 0x7034 0x154
+release
+return
+
+
+'---------
+' Strings
+'---------
+#org 0x824C09
+= The train hasn't come in[.]\pI know! I'll carry the passengers on\nmy back!\pThat won't work.
+
+#org 0x824C66
+= We'll soon depart for Saffron.\pAre you coming on board?
+
+#org 0x824CA0
+= We hope to see you again.
+
+#org 0x824CBC
+= Sorry, but you don't have a Pass.
+
+#org 0x824CE0
+= May I see your rail Pass, please?\pOK. Right this way, bub!
+
+
+'-----------
+' Movements
+'-----------
+#org 0x824D1D
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x12 'Step Left (Normal)
+#raw 0x3 'Face Right
+#raw 0xFE 'End of Movements
+
+#org 0x824D23
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x12 'Step Left (Normal)
+#raw 0x12 'Step Left (Normal)
+#raw 0x12 'Step Left (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0xFE 'End of Movements
+
+#org 0x824D2D
+#raw 0x60 'Hide
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x1E 'Step Up (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0x20 'Step Right (Fast)
+#raw 0xFE 'End of Movements
+
+#org 0x824D4F
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0x1F 'Step Left (Fast)
+#raw 0xFE 'End of Movements
