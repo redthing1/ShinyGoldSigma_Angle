@@ -3,3 +3,4 @@ start: Shiny Gold Sigma v1.3.8
 
 add flower to pallet town, with yahaha message
 change goldenrod train station success message to "Right this way, bub!"
+add flower to new bark town, with yahaha message
