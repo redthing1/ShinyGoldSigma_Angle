@@ -26,3 +26,4 @@ things i can't do:
 
 - dark cave has very low level pkmn, despite it being after faulkner (who enables flash). faulkner's highest pkmn is level 14. i think dark cave levels should be around 6-12.
 - slowpoke well has very low level pkmn. i think it should be around lv 10-12 on avg.
+- ilex forest pkmn underleveled, make all 10-11 ish

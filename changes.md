@@ -14,3 +14,4 @@ base rom: **shiny gold sigma v1.3.8** (SHA1: `bba2935fddba1e6950c5b4cc3caf8a7bba
 + replace route 33 ratatta with mareep
 + add a clearing with a house in route 33
 + increase wild pokemon levels in slowpoke well (2.17)
++ increase wild pokemon levels in ilex forest (2.18)
