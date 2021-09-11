@@ -5,3 +5,4 @@ add flower to pallet town, with yahaha message
 change goldenrod train station success message to "Right this way, bub!"
 add flower to new bark town, with yahaha message
 increased wild pokemon levels in dark cave (2.66)
+increase encounter rate of wild ralts in route 29
