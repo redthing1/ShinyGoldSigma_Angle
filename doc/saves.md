@@ -8,6 +8,13 @@
     + assuming active slot is the first one
     + player name appears in a weird section, can't modify without breaking cksum
     + at `0x2000` i see the player name in a format that actually matches docs. this section appears to be player data and goes from `0x2000` to `0x2FFF`
+    + section ids actually seem to be correct, with trainer info being `00 00` and team/item info being `01 00`
++ player info section (`00 00`)
+    + player name can be modded (but this is duplicated across the save, probably better to leave)
+    + playtime can be modded as expected
++ team/item section (`01 00`)
+    + money is a 4-byte field offset `0x290` from the section start. for me, section start was `0x5000`, so this was `0x5290`
+    + team size (u32) is at offset `0x0034`, pokemon list starts at `0x0038`
 
 ## resources
 + https://m.bulbapedia.bulbagarden.net/wiki/Save_data_structure_(Generation_III)
