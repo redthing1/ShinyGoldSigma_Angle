@@ -1,3 +1,12 @@
+notes on modding:
+things i can do:
+- change wild pokemon
+- change tiles
+- modify scripts
+- replace maps and their names
+things i can't do:
+- add new map banks
+
 i want to recurve the busted curve that requires grinding
 
 im going to note areas where the curve spikes like this
