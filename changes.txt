@@ -9,3 +9,4 @@ increase encounter rate of wild ralts in route 29
 increase wild pokemon levels in route 33 (2.69)
 replace route 33 ratatta with mareep
 add a clearing with a house in route 33
+increase wild pokemon levels in slowpoke well (2.17)
