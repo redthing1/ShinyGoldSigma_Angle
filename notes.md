@@ -15,6 +15,7 @@ things i can do:
 - change tiles
 - modify scripts
 - replace maps and their names
+
 things i can't do:
 - add new map banks, when i do this on transitions the game blackscreens and then freezes
 

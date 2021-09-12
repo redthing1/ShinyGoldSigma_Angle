@@ -16,7 +16,11 @@
     + money is a 4-byte field offset `0x290` from the section start. for me, section start was `0x5000`, so this was `0x5290`
     + team size (u32) is at offset `0x0034`, pokemon list starts at `0x0038`
 + confirmed that sgs uses "save block expansion", meaning that it utilizes details of the section layout to enable it to transparently store extra data. here is a brief overview and explanation
-    + based on the save data section structure,
+    + based on the save data section structure, there are two save slots, and each save slot is composed of 14 sections. these sections are stored on 14 sectors of size `0x1000` (4096).
+    + sections are rotated around, so the section number does not match the sector number, but each section should only be appearing once.
+    + firered section blocks are length `0x1000`, matching sector size. the section consists of a data content in offsets `0x000`-`0xF7F` (length 3968), and a tail of length 128 from `0xF80`-`0xFF3`. this tail is composed of an unknown/padding content (length 116) and then the final 12 bytes (offset `0xFF4`-`0xFFF`) are the section footer. 
+    + based on inspection, sgs seems to use the unknown/padding area of the sector tail to store additional data.
+    + unsure of whether section checksums need to include this mystery data stored in the tails, but so far i have included it and it works
 
 ## resources
 + see the `pdf/` dir for documents

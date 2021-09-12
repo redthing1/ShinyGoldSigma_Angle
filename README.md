@@ -12,3 +12,15 @@ this mod/hack builds on the greatness of shiny gold sigma by simply ironing such
 ## key goals
 + full save compatibility with base shiny gold sigma
 + improved level curve of pokemon to reduce grinding
+
+## documentation
+
+see `doc/` for all the documents containing various findings for this project
+see `changes.md` for a summary of romhack changes
+
+## tools
+to assist in project research, here are related tools:
++ [pksave_gba](https://github.com/redthing1/pksave_gba) for save file research
+
+## credits
++ alex sanchez for the base shiny gold sigma rom
