@@ -18,7 +18,7 @@
 + confirmed that sgs uses "save block expansion", meaning that it utilizes details of the section layout to enable it to transparently store extra data. here is a brief overview and explanation
     + based on the save data section structure, there are two save slots, and each save slot is composed of 14 sections. these sections are stored on 14 sectors of size `0x1000` (4096).
     + sections are rotated around, so the section number does not match the sector number, but each section should only be appearing once.
-    + firered section blocks are `0x1000`, matching sector size. the section consists of a data content of length `0xF80` (3968), and a tail of length `0x80` (128). this tail is composed of an unknown/padding content and then the final 12 bytes are the section footer. 
+    + firered section blocks are length `0x1000`, matching sector size. the section consists of a data content in offsets `0x000`-`0xF7F` (length 3968), and a tail of length 128 from `0xF80`-`0xFF3`. this tail is composed of an unknown/padding content (length 116) and then the final 12 bytes (offset `0xFF4`-`0xFFF`) are the section footer. 
 
 ## resources
 + see the `pdf/` dir for documents
