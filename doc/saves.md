@@ -15,7 +15,10 @@
 + team/item section (`01 00`)
     + money is a 4-byte field offset `0x290` from the section start. for me, section start was `0x5000`, so this was `0x5290`
     + team size (u32) is at offset `0x0034`, pokemon list starts at `0x0038`
++ confirmed that sgs uses "save block expansion", meaning that it utilizes details of the section layout to enable it to transparently store extra data. here is a brief overview and explanation
+    + based on the save data section structure,
 
 ## resources
++ see the `pdf/` dir for documents
 + https://m.bulbapedia.bulbagarden.net/wiki/Save_data_structure_(Generation_III)
 + https://m.bulbapedia.bulbagarden.net/wiki/Character_encoding_(Generation_III)
