@@ -20,7 +20,7 @@
     + sections are rotated around, so the section number does not match the sector number, but each section should only be appearing once.
     + firered section blocks are length `0x1000`, matching sector size. the section consists of a data content in offsets `0x000`-`0xF7F` (length 3968), and a tail of length 128 from `0xF80`-`0xFF3`. this tail is composed of an unknown/padding content (length 116) and then the final 12 bytes (offset `0xFF4`-`0xFFF`) are the section footer. 
     + based on inspection, sgs seems to use the unknown/padding area of the sector tail to store additional data.
-    + unsure of whether section checksums need to include this mystery data stored in the tails
+    + unsure of whether section checksums need to include this mystery data stored in the tails, but so far i have included it and it works
 
 ## resources
 + see the `pdf/` dir for documents
