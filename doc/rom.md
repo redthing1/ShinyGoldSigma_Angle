@@ -11,3 +11,9 @@ the entry `0x01` is the entry for the `MASTER BALL`. since nearly all romhacks k
 
 so we'd search the rom for the (PokeString encoded) data for `MASTER BALL`. Often if capitalization is modified, you also want to try variations like `Master Ball`. Also, sometimes parts of the data like the space character can be different, so maybe try searching for many different strings or just parts of one. Overall you just want to correlate where all the items appear together to find the item table.
 
+### example
+
+searching for `Master Ball`
+```
+xxd -u -c 256 -g 1 PokemonSGS_v1.3.8.gba | grep 'C7 D5 E7 E8 D9 E6 00 BC D5 E0 E0 FF 00 00 01'
+```
