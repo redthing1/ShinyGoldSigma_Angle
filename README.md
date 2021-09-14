@@ -22,5 +22,9 @@ see `changes.md` for a summary of romhack changes
 to assist in project research, here are related tools:
 + [pksave_gba](https://github.com/redthing1/pksave_gba) for save file research
 
+## info
+
+`PokemonSGS_Angle_v138x0.gba` (SHA1: `TBD`)
+
 ## credits
 + alex sanchez for the base shiny gold sigma rom
