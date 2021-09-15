@@ -29,3 +29,6 @@ things i can't do:
 - slowpoke well has very low level pkmn. i think it should be around lv 10-12 on avg.
 - ilex forest pkmn underleveled, make all 10-11 ish
 - natpark low level
+
+## tips
+- get fairy dust from one of the pots near burned tower in ecruteak
