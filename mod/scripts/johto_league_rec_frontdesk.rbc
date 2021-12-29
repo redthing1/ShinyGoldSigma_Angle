@@ -1,0 +1,30 @@
+'---------------
+#org 0x801360
+checkflag 0x1158
+if 0x1 call 0x8801390
+applymovement MOVE_PLAYER 0x8801395
+pause 0x1
+msgbox 0x8801399 MSG_FACE '"Only trainers who have proven them..."
+setflag 0x1158
+release
+end
+
+'---------------
+#org 0x801390
+release
+end
+
+
+'---------
+' Strings
+'---------
+#org 0x801399
+= Only trainers who have proven them-\nselves may pass.\pOh! The eight Badges of Johto!\pPlease go right ahead!
+
+
+'-----------
+' Movements
+'-----------
+#org 0x801395
+#raw 0x2 'Face Left
+#raw 0xFE 'End of Movements
