@@ -21,3 +21,4 @@ base rom: **shiny gold sigma v1.3.8** (SHA1: `bba2935fddba1e6950c5b4cc3caf8a7bba
 + increase wild pokemon levels in burned tower (2.75, 2.76)
 + increase wild pokemon levels in ice path (1.115, 1.116, 1.117, 1.118)
 + increase wild pokemon levels in route 45 (2.44)
++ increase wild pokemon levels in victory road
