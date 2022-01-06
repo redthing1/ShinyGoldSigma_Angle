@@ -2,6 +2,8 @@
 
 ## finding data tables
 
+use [Advanced Offset](https://www.pokecommunity.com/showthread.php?t=347441) to make an ini with data table locs
+
 often in hacked roms, you want to find data tables for things like items or pokemon.
 
 within mainline gen iii roms, the offsets are known. you can use that to look at the data in that offset, to get an idea of what data is there.
