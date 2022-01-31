@@ -1,3 +1,41 @@
+# SGS139
+
+Trainers @everyone,
+Happy Pokémon Arceus release!
+Pokémon Shiny Gold Sigma was updated to version 1.3.9, up to Fortree City. Wanna buy me a coffee? Message me. Enjoy! wink
+
+SGS 1.3.9
+Mediafire GBA ZIP: https://tinyurl.com/PkmnSGS139MF1
+Mega GBA ZIP: https://tinyurl.com/PkmnSGS139MG1
+
+Guide
+Mega: https://tinyurl.com/PkmnSGS138b
+
+Fixes/Adds/QoL updates:
++Eusine and Suicune, Tin Tower access
++As part of the Arceus release, Kleavor, the Axe Pokémon, is now available in SGS, evolves from Scyther by using Razor Claw (TBD).
++A new -Eevee was founded in the code master which will allow you to evolve it into the new eeveelutions.
++As part of the BDSP release, now Sinnoh Starters spawns at Cherrygrove City.
+
++Stability and various bug fixes, performance updates.
+
++Portkey WormHoles will be activated with a secret event all around the regions. Test yourself and look for them! Portkey WormHoles will allow you to time-travel and find rare unique places and creatures!
+
++Hoenn is up to Fortree City (ORAS Style) and Route 119 beta, with a brand new Gym Maze. Will you be able to beat Winona, the Flying type Gym Leader?
+
+We are currently researching/adding:
+-Hoenn finished
+-Ultrafly feature
+-Ultra Wormholes spaces
+-New moves/abilities
+-Sinnoh post-game
+-Cinthia.
+-Galar and Hisui Pokémon.
+
+Did you know? Yesterday in 2004, 18 years ago, Pokémon FireRed & LeafGreen were first released.
+
+The Shiny Gold Sigma Team.
+
 # Spooky1
 
 Trainers,
